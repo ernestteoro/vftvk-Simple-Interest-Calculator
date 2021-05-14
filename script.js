@@ -7,11 +7,13 @@ function principalOnChangeEvent() {
     if (amount <= 0) {
         alert("Please inter a valide amount greater than 0")
         document.getElementById("principal").value = ""
+        document.getElementById("principal").focus();
     }
 
 }
 
 function compute() {
+
     amount = document.getElementById("principal").value;
     rateValue = document.getElementById("interestRate").value
     year = document.getElementById("years").value
