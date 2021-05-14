@@ -1,5 +1,5 @@
 function interestRateValue() {
-    document.getElementById('interestValue').innerHTML = document.getElementById('interestRate').value
+    document.getElementById('interestValue').innerHTML = (document.getElementById('interestRate').value + "%")
 }
 
 function principalOnChangeEvent() {
