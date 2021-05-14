@@ -1,10 +1,24 @@
 body {
     /*background-color:tan;*/
+    background-color: black;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    color: white;
+}
+
+.innerDiv {
+    margin: 25px;
+}
+
+.myDiv {
+    /*background-color:tan;*/
     background-color: white;
     margin: auto;
     width: 50%;
     padding: 10px;
     color: black;
+    border-radius: 15px;
 }
 
 .format {
