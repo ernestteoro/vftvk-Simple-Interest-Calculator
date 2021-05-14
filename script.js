@@ -2,6 +2,15 @@ function interestRateValue() {
     document.getElementById('interestValue').innerHTML = document.getElementById('interestRate').value
 }
 
+function principalOnChangeEvent() {
+    amount = parseInt(document.getElementById("principal").value);
+    if (amount <= 0) {
+        alert("Please inter a valide amount greater than 0")
+        document.getElementById("principal").value = ""
+    }
+
+}
+
 function compute() {
     amount = document.getElementById("principal").value;
     rateValue = document.getElementById("interestRate").value
