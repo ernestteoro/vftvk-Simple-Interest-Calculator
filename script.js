@@ -7,19 +7,16 @@ function compute() {
     rateValue = document.getElementById("interestRate").value
     year = document.getElementById("years").value
 
-    var interestAmount = (amount * (rateValue / 100)) * year
+    /// Calculating the interest amount
+    var interestAmount = (parseInt(amount) * (parseInt(rateValue) / 100)) * parseInt(year)
 
-    console.log(amount)
-    console.log(rateValue)
-    console.log(year)
-    console.log(interestAmount)
-
+    // getting the current date
     const moonLanding = new Date();
-
+    // Displaying computed data
     document.getElementById("result").innerHTML = interestAmount
     document.getElementById("depositAmount").innerHTML = document.getElementById("principal").value;
     document.getElementById("depositRate").innerHTML = document.getElementById("interestRate").value
-    document.getElementById("numYears").innerHTML = (moonLanding.getFullYear() + year)
+    document.getElementById("numYears").innerHTML = (parseInt(moonLanding.getFullYear()) + parseInt(year))
 
 
 }
